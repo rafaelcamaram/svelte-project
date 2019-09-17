@@ -1,36 +1,54 @@
-# A Svelte Template with SASS Support
+<p align="center"><h1>Svelte Project</h1></p>
+<h3>Under development</h3>
+
+## Introduction
 
 This Svelte app is based on the project template at [https://github.com/sveltejs/template](https://github.com/sveltejs/template), with the addition of SASS/SCSS support from [svelte-preprocess](https://github.com/kaisermann/svelte-preprocess).
 
-It also should handle the other processors enabled by `svelte-preprocess`:
+## Structure
 
-- pug
-- coffeescript or coffee
-- less
-- scss or sass
-- stylus
-- postcss
-- globalStyle (transform `<style global>` into global styles.)
+You can read more about it on: `STRUCTURE.md`
 
-## What to Change
+## Get started
 
-You can clone this template with `degit dceddia/svelte-template-sass` or just make a few small changes to your own app. The changes are minimal:
+1 - Install the dependencies
 
-- `npm install svelte-preprocess`
-- Update `rollup.config.js` to add "preprocess" to the `svelte` plugin (you'll also need to import `autoPreprocess`)
-
-```js
-// add this import:
-import autoPreprocess from 'svelte-preprocess';
-
-// and inside the svelte plugin, add autoPreprocess:
-export default {
-  /* ... */
-  plugins: [
-    svelte({
-      /* ... */
-      preprocess: autoPreprocess()
-  }),
-  /* ... */
-}
+```bash
+cd svelte-project
+npm install
 ```
+
+2 - Then start [Rollup](https://rollupjs.org):
+
+```bash
+npm run dev
+```
+
+3 - Navigate to [localhost:5000](http://localhost:5000). You should see your app running.
+
+## Deploying to the web
+
+### With [now](https://zeit.co/now)
+
+1 - Install `now` if you haven't already:
+
+```bash
+npm install -g now
+```
+
+2 - Then, from within your project folder:
+
+```bash
+cd public
+now
+```
+
+## Contribute
+
+Coming soon.
+
+## Authors
+
+Svelte-Project is a project by:
+
+[<img src="https://avatars1.githubusercontent.com/u/9087886?v=4" width="100px;"/><br /><sub><b>Rafael Câmara</b></sub>](https://github.com/rafaelcamaram)<br />[💻](https://github.com/dawnlabs/carbon/commits?author=rafaelcamaram "Code")
