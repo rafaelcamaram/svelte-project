@@ -1,5 +1,5 @@
 <script>
-  import Greeting from "./components/presentational/Greeting/Greeting.svelte";
+  import Greeting from "./components/presentational/Greeting";
 </script>
 
 <style global lang="scss" type="text/scss" src="./App.scss">
