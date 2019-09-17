@@ -1,9 +1,11 @@
 @import "config/styles/colors.scss";
 
-:global(h1) {
+h1 {
   color: $base-color;
 }
 
-:global(h3, p, span) {
+h3,
+p,
+span {
   color: $text-color;
 }

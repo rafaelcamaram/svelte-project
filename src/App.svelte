@@ -2,7 +2,7 @@
   import Greeting from "./components/presentational/Greeting/Greeting.svelte";
 </script>
 
-<style lang="scss" type="text/scss" src="./App.scss">
+<style global lang="scss" type="text/scss" src="./App.scss">
 
 </style>
 
