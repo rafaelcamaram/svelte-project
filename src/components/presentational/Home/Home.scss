@@ -1,0 +1,66 @@
+@import "../../../config/styles/colors.scss";
+@import "../../../config/styles/spacing.scss";
+@import "../../../config/styles/shadows.scss";
+
+#home-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+
+  #two-side-container {
+    &__left {
+      width: 50vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: $primary-soft-blue;
+      background: linear-gradient(
+        45deg,
+        $primary-soft-blue 0%,
+        $primary-dark-blue 100%
+      );
+
+      svg {
+        opacity: 1;
+        transition: 1s;
+      }
+    }
+
+    &__right {
+      width: 50vw;
+      height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      background-color: white;
+
+      padding: $space-xl;
+      box-sizing: border-box;
+
+      h1,
+      h3 {
+        color: $primary-dark-blue;
+      }
+
+      p {
+        color: $neutral-gray;
+      }
+
+      &--content {
+        max-width: 600px;
+      }
+    }
+
+    &__email {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

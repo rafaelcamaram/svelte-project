@@ -1,0 +1,10 @@
+$shadow-card: inset 0 7em 10em -5em rgba(255, 255, 255, 0),
+  0 0.3em 0.5em -0.2em rgba(100, 100, 100, 0.3),
+  0 1em 2em -0.75em rgba(100, 100, 100, 0.1),
+  0 1em 3em -0.5em rgba(100, 100, 100, 0.3),
+  0 3em 3em -0.25em rgba(100, 100, 100, 0);
+
+$shadow-input-active: 0 7px 14px #{$primary-dark-blue}30,
+  0 5px 5px #{$primary-soft-blue}30;
+
+$shadow-input: 0 7px 14px rgba(0, 0, 0, 0.11), 0 5px 5px rgba(0, 0, 0, 0.08);

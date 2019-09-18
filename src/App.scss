@@ -1,5 +1,12 @@
 @import "config/styles/colors.scss";
+@import "config/styles/typography.scss";
+@import "config/styles/spacing.scss";
+@import "config/styles/shadows.scss";
 
+body {
+  margin: 0;
+  padding: 0;
+}
 h1 {
   color: $base-color;
 }
@@ -8,4 +15,50 @@ h3,
 p,
 span {
   color: $text-color;
+}
+
+input {
+  width: 100%;
+  height: 55px;
+
+  padding: 8px 16px;
+
+  border-radius: $space-xxs;
+  border: 0;
+  box-shadow: $shadow-input;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  transition: all 0.3s ease-in-out;
+  outline: none;
+
+  &:focus {
+    box-shadow: $shadow-input-active;
+  }
+}
+
+button {
+  width: 200px;
+  height: 55px;
+
+  margin-left: 20px;
+
+  border: 0;
+  border-radius: $space-xxs;
+  box-shadow: $shadow-card;
+
+  background-color: $accent-green;
+  color: white;
+  font-weight: 700;
+
+  transition: 1s;
+
+  cursor: pointer;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
